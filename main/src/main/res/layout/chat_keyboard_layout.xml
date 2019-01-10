@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 键盘Top部分，包含输入框，发送按钮，表情，更多功能按钮等 -->
+    <myproject.smack.keyboard.KeyBoardToolBoxView
+        android:id="@+id/keyboard_toolbox_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_8" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c9c9c9" />
+
+    <RelativeLayout
+        android:id="@+id/keyboardContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone">
+
+        <!-- more View -->
+        <myproject.smack.keyboard.KeyBoardMoreFunView
+            android:id="@+id/keyboard_more_fun_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ECECEC"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_30"
+            android:paddingRight="@dimen/dimen_30"
+            android:paddingTop="@dimen/dimen_20"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:id="@+id/cb_select_tree"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/tree_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cb_select_tree">
+
+        <TextView
+            android:id="@+id/id_treenode_label"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cb_select_tree"
+            android:textColor="@color/text_color2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@mipmap/comm_right_arrow" />
+    </LinearLayout>
+</RelativeLayout>

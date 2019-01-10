@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.pwittchen:reactivenetwork-0.9.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/reactivenetwork-0.9.1.aar/1f0b243a6ff1d09efa17bd8341eb456d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/reactivenetwork-0.9.1.aar/1f0b243a6ff1d09efa17bd8341eb456d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pwittchen/reactivenetwork/0.9.1/902c6b81c7972b2836fb9f930f38639b49624f14/reactivenetwork-0.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

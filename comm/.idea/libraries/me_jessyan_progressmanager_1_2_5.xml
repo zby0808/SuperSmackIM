@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="me.jessyan:progressmanager-1.2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/progressmanager-1.2.5.aar/04611eb5f419a6b46758e25b7f5b989b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/progressmanager-1.2.5.aar/04611eb5f419a6b46758e25b7f5b989b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.jessyan/progressmanager/1.2.5/91afcdea8ff9479b8f28843e1e8f8f88658de3f2/progressmanager-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

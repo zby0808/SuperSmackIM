@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/recording_voice_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recording_voice_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vector_recording_voice"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/recording_voice_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/recording_voice_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_recording_voice_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/cancel_recording_voice_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vector_recording_cancel"
+            tools:ignore="VectorDrawableCompat" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/recording_voice_cancel_text_bg"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5">
+
+            <TextView
+                android:id="@+id/cancel_recording_voice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cancel_recording_voice_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

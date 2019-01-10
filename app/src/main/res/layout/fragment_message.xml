@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/root_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/container_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_tab"
+                android:button="@null"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="消息"
+                android:textColor="@drawable/selector_left_right"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/container_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_right"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="联系人"
+                android:textColor="@drawable/selector_left_right"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_container"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>

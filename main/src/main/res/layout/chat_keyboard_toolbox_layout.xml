@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 语音输入切换按钮 -->
+    <CheckBox
+        android:id="@+id/keyboard_voice_button"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:background="@drawable/bg_keyboard_voice"
+        android:button="@null" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_toLeftOf="@+id/keyboard_emotion_button"
+        android:layout_toRightOf="@id/keyboard_voice_button"
+        android:layout_weight="1">
+
+        <!-- 文字输入框 -->
+        <EditText
+            android:id="@+id/keyboard_input_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_edittext"
+            android:inputType="textMultiLine"
+            android:maxHeight="60dp"
+            android:minHeight="@dimen/dimen_30"
+            android:singleLine="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/keyboard_record_voice_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:background="@drawable/btn_speak"
+            android:text="按住  说话"
+            android:textColor="#515151"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 表情按钮 -->
+    <CheckBox
+        android:id="@+id/keyboard_emotion_button"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_toLeftOf="@+id/keyboard_send_and_moreFun_layout"
+        android:background="@drawable/more_button"
+        android:visibility="gone"
+        android:button="@null" />
+
+    <LinearLayout
+        android:id="@+id/keyboard_send_and_moreFun_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 发送文字按钮 -->
+        <Button
+            android:id="@+id/keyboard_sendText_button"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/dimen_30"
+            android:background="@drawable/main_button_bg"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <!-- 更多按钮 -->
+        <CheckBox
+            android:id="@+id/keyboard_moreFun_button"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:background="@drawable/more_button"
+            android:button="@null" />
+    </LinearLayout>
+</RelativeLayout>

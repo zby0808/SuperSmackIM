@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myproject">
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".smack.activity.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.BigImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.CreateGroupIMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.GroupChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.GroupMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".smack.activity.GroupInfoActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

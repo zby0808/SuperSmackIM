@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <attr name="loading_renderer">
+            <enum name="CollisionLoadingRenderer" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialLayout">
+        <attr name="alphamy" format="integer" />
+        <attr name="alpha_step" format="integer" />
+        <attr name="framerate" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="my_color" format="color" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BigImageView">
+        <attr name="supportPadding" format="dimension"></attr>
+        <attr name="supportRatio" format="float"></attr>
+        <attr name="supportFrame" format="boolean"></attr>
+        <attr name="supportBig" format="boolean"></attr>
+    </declare-styleable>
+
+
+</resources>

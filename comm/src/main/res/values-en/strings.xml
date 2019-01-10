@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="comm_loading_wait_msg">Wait For A Moment Please...</string>
+
+    <string name="comm_permission_confirm">YES</string>
+    <string name="comm_permission_cancel">CANCEL</string>
+    <string name="comm_permission_title">Permission Setting</string>
+    <string name="comm_permission_message_permission_failed">We need some permissions are you refuse or system error, would you please go to Settings page manual authorization, otherwise the function to use!</string>
+
+    <string name="comm_net_error_connent">Please Check Whether Network Is Open</string>
+    <string name="comm_net_error_timeout">Connection Timeout</string>
+    <string name="comm_net_error_nourl">Link Does Not Exist</string>
+    <string name="comm_net_error_http">NetWork Error,StatusCode</string>
+</resources>
